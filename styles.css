@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #333;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Jk9yzUf.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@font-face {
+    font-family: scaryFont;
+    src: url('./fonts/October Twilight.ttf');
+   }
+.container {
+    height: 100vh;
+    place-content: center;
+    text-align: center;
+    display: grid;
+    position: relative;
+}
+h1 {
+    font-size: 4rem;
+    font-family: scaryFont;
+    font-weight: 50;
+    text-shadow: 0 0 6px white;
+}
+.text {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: auto;
+    padding: 2rem;
+    transition: all 200ms ease;
+}
+#countdown {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+    text-align: center;
+}
+.time {
+font-size: 20px;
+}
+#days, #minutes, #hours, #seconds {
+    font-size: 3rem;
+}
+#countdown p {
+    cursor: pointer;
+    transition: all 200ms ease;
+    z-index: 5;
+    
+}
+#countdown:hover {
+    text-shadow: 0 0 12px orange;
+}
+@media (max-width: 540px){
+    h1 {
+        font-size: 2rem;
+    }
+    #countdown {
+        font-size: 1.5rem;
+    }
+}
